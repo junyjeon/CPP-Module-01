@@ -3,16 +3,20 @@
 //
 
 #include "HumanB.h"
-HumanB::HumanB() {};
+
+HumanB::HumanB() : name("default"), weapon(NULL) {};
 HumanB::~HumanB() {};
 HumanB::HumanB(std::string _name) {
 	name = _name;
+	weapon = NULL;
 }
 
-void HumanB::setWeapon(Weapon _weapon) {
-	weapon = _weapon;
+void HumanB::setWeapon(Weapon &_weapon) {
+	weapon = &_weapon;
 }
 
 void HumanB::attack() {
-	std::cout << this->name << " attacks with their " << this->weapon.getType() << std::endl;
+	if (!this->weapon)
+		std::cout << this->name << " does not have any weapon" << std::endl;
+	else std::cout << this->name << " attacks with their " << this->weapon->getType() << std::endl;
 }

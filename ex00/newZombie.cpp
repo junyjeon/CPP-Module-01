@@ -1,7 +1,7 @@
 //
 // Created by jjy84 on 2023-06-03(003).
 //
-#include <zombie.hpp>
+#include "Zombie.hpp"
 
 Zombie* newZombie(std::string name){
 	Zombie* heapZ = new Zombie(name);

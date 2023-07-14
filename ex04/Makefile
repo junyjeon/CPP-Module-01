@@ -1,8 +1,8 @@
 NAME		=	Replace
 
-CC			=	clang++
-CFLAGS		=	-std=c++98 -Wall -Wextra -Werror
-#CFLAGS		+=	-fsanitize=address
+CXX			=	clang++
+CXXFLAGS	=	-std=c++98 -Wall -Wextra -Werror
+#CXXFLAGS	+=	-fsanitize=address
 
 INC_DIR		=	.
 
@@ -14,25 +14,25 @@ OBJ			=	$(patsubst %.c, $(BUILD_DIR)/%.o, $(SRC))
 all:	$(NAME)
 
 $(NAME): $(OBJ)
-	@$(CC) $(CFLAGS) -I$(INC_DIR) -o $@ $^
+	@$(CXX) $(CXXFLAGS) -I$(INC_DIR) -o $@ $^
 	@echo "$(GREEN)SUCCESS!$(END)"
 
-$(BUILD_DIR)/%.o: %.c | mkdir
-	@$(CC) $(CFLAGS) -c $< -o $@
+$(BUILD_DIR)/%.o: %.c | $(BUILD_DIR)
+	@$(CXX) $(CXXFLAGS) -c $< -o $@
 
-mkdir:
+$(BUILD_DIR):
 	@mkdir -p $(BUILD_DIR)
 
 clean:
 	@$(RM) -r $(BUILD_DIR)
-	@echo "${YELLOW}> All objects files of the Replace have been deleted.❌${END}"
 
 fclean: clean
 	@$(RM) -r $(NAME)
 	@echo "${YELLOW}> Cleaning of the Replace has been done.❌${END}"
 
-re: fclean
-	@$(MAKE)
-	@echo "$(GREEN)Cleaned and rebuilt everything for Replace!${END}"
+re: fclean all
 
-.PHONY: all clean fclean re mkdir
+.PHONY: all clean fclean re
+
+Yellow : \033[0;33m
+Green  : \033[0;32m
