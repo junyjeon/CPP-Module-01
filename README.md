@@ -786,7 +786,6 @@ case 2:
   - [Member Function Pointers](https://isocpp.org/wiki/faq/pointers-to-members)
   - [Function Pointers in C++](https://www.cprogramming.com/tutorial/function-pointers.html)
 
-
 • Switch Statements
   - [Switch Statement in C++](https://en.cppreference.com/w/cpp/language/switch)
   - [Switch Case Practices](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-switch)
