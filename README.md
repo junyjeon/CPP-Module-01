@@ -1,11 +1,20 @@
-# CPP Module 01
-
 <div align="center">
+  <h1>💻 CPP Module 01</h1>
+  <p>메모리 관리와 참조 | C++ 중급 개념 학습</p>
+
   <img src="assets/13_cpp_module_01_review.jpg" alt="CPP Module 01 Review" width="800"/>
   
-  [![42 Score](https://img.shields.io/badge/Score-85%2F100-success?style=for-the-badge&logo=42)](https://github.com/junyjeon/CPP-Module-01)
-  [![Norminette](https://img.shields.io/badge/Norminette-passing-brightgreen?style=for-the-badge)](https://github.com/42School/norminette)
-  [![C++](https://img.shields.io/badge/C++-98-blue.svg?style=for-the-badge&logo=c%2B%2B)](https://github.com/junyjeon/CPP-Module-01)
+  <div>
+    <img src="https://img.shields.io/badge/Score-85%2F100-success?style=flat-square&logo=42" alt="42 Score"/>
+    <img src="https://img.shields.io/badge/Language-C++98-00599C?style=flat-square&logo=c%2B%2B" alt="Language"/>
+    <img src="https://img.shields.io/badge/Norminette-Passing-brightgreen?style=flat-square" alt="Norm"/>
+  </div>
+
+  ### 학습 내용
+  - new와 delete를 통한 메모리 관리
+  - 포인터와 참조자의 차이점
+  - 파일 스트림 조작
+  - 스택과 힙 메모리 활용
 </div>
 
 ## 목차
@@ -30,21 +39,6 @@
 
 ### 🗣️ 개요
 C++의 메모리 관리와 참조자를 학습하는 두 번째 C++ 모듈입니다.
-
-• 학습 목표
-  - 메모리의 스택과 힙 영역 이해
-  - new와 delete를 통한 메모리 관리
-  - 포인터와 참조자의 차이점 파악
-  - 파일 스트림 활용 방법 습득
-  - switch문 활용
-
-• 주요 개념
-  - Memory allocation (new/delete)
-  - References vs Pointers
-  - File streams
-  - Classes and objects
-  - Member pointers
-  - Switch statement
 
 ### 요구사항
 • 컴파일러
