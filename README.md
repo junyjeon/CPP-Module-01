@@ -4,6 +4,7 @@
   <img src="assets/13_cpp_module_01_review.jpg" alt="CPP Module 01 Review" width="800"/>
   
   [![42 Score](https://img.shields.io/badge/Score-85%2F100-success?style=for-the-badge&logo=42)](https://github.com/junyjeon/CPP-Module-01)
+  [![Norminette](https://img.shields.io/badge/Norminette-passing-brightgreen?style=for-the-badge)](https://github.com/42School/norminette)
   [![C++](https://img.shields.io/badge/C++-98-blue.svg?style=for-the-badge&logo=c%2B%2B)](https://github.com/junyjeon/CPP-Module-01)
 </div>
 
