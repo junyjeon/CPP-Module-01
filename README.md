@@ -3,13 +3,14 @@
 <div align="center">
   <img src="assets/13_cpp_module_01_review.jpg" alt="CPP Module 01 Review" width="800"/>
   
-  [![42 Score](https://img.shields.io/badge/Score-85%2F100-success?style=for-the-badge&logo=42)](https://github.com/your-username/CPP-Module-01)
+  [![42 Score](https://img.shields.io/badge/Score-85%2F100-success?style=for-the-badge&logo=42)](https://github.com/junyjeon/CPP-Module-01)
+  [![C++](https://img.shields.io/badge/C++-98-blue.svg?style=for-the-badge&logo=c%2B%2B)](https://github.com/junyjeon/CPP-Module-01)
 </div>
 
-## Table of Contents
-- [About](#about)
-- [Requirements](#requirements)
-- [Implementation](#implementation)
+## 목차
+- [개요](#개요)
+- [요구사항](#요구사항)
+- [구현](#구현)
   - [ex00: BraiiiiiiinnnzzzZ](#ex00-braiiiiiinnnzzzz)
   - [ex01: Moar brainz!](#ex01-moar-brainz)
   - [ex02: HI THIS IS BRAIN](#ex02-hi-this-is-brain)
@@ -17,8 +18,16 @@
   - [ex04: Sed is for losers](#ex04-sed-is-for-losers)
   - [ex05: Harl 2.0](#ex05-harl-20)
   - [ex06: Harl filter](#ex06-harl-filter)
+- [테스트 & 디버그](#테스트--디버그)
+- [추가 정보](#추가-정보)
+  - [메모리 관리](#메모리-관리)
+  - [참조자와 포인터](#참조자와-포인터)
+  - [파일 처리](#파일-처리)
+  - [멤버 함수 포인터](#멤버-함수-포인터)
+  - [switch문](#switch문)
+- [참고 자료](#참고-자료)
 
-### 🗣️ About
+### 🗣️ 개요
 C++의 메모리 관리와 참조자를 학습하는 두 번째 C++ 모듈입니다.
 
 • 학습 목표
@@ -36,7 +45,7 @@ C++의 메모리 관리와 참조자를 학습하는 두 번째 C++ 모듈입니
   - Member pointers
   - Switch statement
 
-### Requirements
+### 요구사항
 • 컴파일러
   - c++ (clang++)
   - -Wall -Wextra -Werror
@@ -48,7 +57,7 @@ C++의 메모리 관리와 참조자를 학습하는 두 번째 C++ 모듈입니
   - printf 대신 cout 사용
   - 전역 변수 사용 금지
 
-### Implementation
+### 구현
 
 #### ex00: BraiiiiiiinnnzzzZ
 • 요구사항
@@ -534,7 +543,7 @@ I want to speak to the manager now.
     - 조건부 출력
     - 에러 처리
 
-### Testing & Debug
+### 테스트 & 디버그
 
 • 컴파일 및 기본 테스트
 ```bash
@@ -654,7 +663,7 @@ if (pos == std::string::npos) {
 valgrind --track-origins=yes ./program
 ```
 
-### Additional Information
+### 추가 정보
 
 #### new와 delete 연산자
 • 특징
@@ -767,25 +776,25 @@ case 2:
     // 처리
 ```
 
-### Reference
+### 참고 자료
 > 메모리 관리와 참조자에 대한 깊은 이해를 위한 자료들
 
-• Memory Management
+• 메모리 관리(Memory Management)
   - [Dynamic memory management](http://www.cplusplus.com/doc/tutorial/dynamic/)
   - [Memory Management in C++](https://www.geeksforgeeks.org/memory-management-in-cpp/)
 
-• References and Pointers
+• 참조자와 포인터(References and Pointers)
   - [References in C++](https://www.learncpp.com/cpp-tutorial/references/)
   - [Pointers vs References](https://www.geeksforgeeks.org/pointers-vs-references-cpp/)
 
-• File Handling
+• 파일 처리(File Handling)
   - [C++ File Handling](http://www.cplusplus.com/doc/tutorial/files/)
   - [Working with Files in C++](https://www.learncpp.com/cpp-tutorial/basic-file-io/)
 
-• Member Function Pointers
+• 멤버 함수 포인터(Member Function Pointers)
   - [Member Function Pointers](https://isocpp.org/wiki/faq/pointers-to-members)
   - [Function Pointers in C++](https://www.cprogramming.com/tutorial/function-pointers.html)
 
-• Switch Statements
+• switch문(Switch Statements)
   - [Switch Statement in C++](https://en.cppreference.com/w/cpp/language/switch)
   - [Switch Case Practices](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-switch)
